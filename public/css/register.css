@@ -1,0 +1,60 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+.register label{
+    padding: 5%;
+}
+
+.form{
+    width: 90%;
+}
+.form-control{
+    margin-bottom: 45px;
+    text-align: left;
+    margin-left: 10%;
+}
+.control {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px transparent;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+}
+.enviar{
+    padding: 9px;
+    background-color: #007bff ;
+    color: #fff;
+    margin: 5px;
+    border-radius: 5px;;
+
+}
+
+.enviar:hover{
+    background-color:  #1259c3;
+    cursor: pointer;
+}
+
+.borrar{
+    padding: 9px;
+    color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.borrar:hover{
+    background-color: #d02434;
+    cursor: pointer;
+}

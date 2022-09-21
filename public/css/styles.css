@@ -64,12 +64,12 @@ header ul li a{
     color: #000;
 }
 
-header .form .input{
+header .form input{
     background-color: #FFF;
     border: 1px solid transparent;
     outline: none;
     color: #666;
-    padding: 10px;
+    padding: 9px;
     width:90%;
     border-radius: 5px 0px 0px 5px
 }
@@ -215,20 +215,6 @@ footer i{
 
 header nav{
     display: none;
-}
-
-.register{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-}
-
-
-
-.register label{
-    padding: 5%;
 }
 
 footer div.footer-contenedor{

@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/register.css">
+
     </head>
     <body>
         <header>
@@ -14,8 +16,8 @@
                 <div class="logo"> 
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
+                <div class="form" action="#" method="GET" class="buscador">                    
+                    <input type="text" placeholder="Buscar productos, marcas y más">
                     <div class="submit"><i class="fa fa-search"></i></div>
                 </div>
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
@@ -38,60 +40,76 @@
             </div>
         </header>
         <main class="register">
-            <form action="/register" method="POST">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-                <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
-                <input type="date" name="birth_date" id="birth_date">
-                <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
+            <form action="/register" class="form" method="POST">
+                <div class="form-control">
+                    <input type="text" name="name" class="control" minlength="3" placeholder="Nombre y apellido">
                 </div>
-
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
-                        <label for="c">Hogar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
-                    </div>
+                <div class="form-control">
+                    <input type="text" name="user" class="control" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="form-control">
+                    <input type="email" name="email" class="control" placeholder="E-mail">
                 </div>
                 
-                <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
-                <button type="submit" class="enviar">Registrate</button>
-                <button type="reset" class="borrar">Borrar</button>
-                <br>
-                <br>
+                </div>
+                <div class="form-control">
+                    <h4>Fecha de nacimiento</h4>
+                    <input type="date" name="birth_date" class="control" id="birth_date">
+                </div>
+                
+                <div class="form-control">
+                    <input type="text" name="addres" class="control" placeholder="Domicilio">
+                </div>
+                <div class="form-control">
+                    <h4>Perfil del usuario</h4>
+                    <div class="control">
+                        <input type="radio" name="profile" value="buy" id="buy">
+                        <label for="buy">Comprador</label>
+                        <input type="radio" name="profile" value="sell" id="sell">
+                        <label for="sell">Vendedor</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h4>Intereses</h4>
+                    <div class="control">
+                        <div>
+                            <input type="checkbox" name="interests" value="a" id="a">
+                            <label for="a">Electro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="b" id="b">
+                            <label for="b">Moda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="c" id="c">
+                            <label for="c">Hogar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="d" id="d">
+                            <label for="d">Juguetería</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interests" value="e" id="e">
+                            <label for="e">Vida sana</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h4>Elegí tu foto de usuario</h4>
+                    <input type="file" class="control" name="avatar">
+                </div>
+                <div class="form-control">
+                    <input type="password" name="pass" class="control" placeholder="Elegí tu contraseña">
+                </div>
+                <div class="form-control">
+                    <input type="password" name="pass_confirm" class="control" placeholder="Confirmá tu contraseña">
+                </div>
+                    
+                <div class="form-button">
+                    <button type="submit" class="enviar">Registrate</button>
+                    <button type="reset" class="borrar">Borrar</button>
+                </div>
+                
             </form>
         </main>
         <footer>
