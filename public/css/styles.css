@@ -20,11 +20,12 @@ p{
 div.top-header{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
 header div.top-header p{
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin-top: 10px;
 }
@@ -36,6 +37,7 @@ header{
 header div.logo,
 header .form{
     width: 50%;
+    text-align: center;
 }
 
 header div.logo{
@@ -44,6 +46,7 @@ header div.logo{
 header .form{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 2px;
     font-size: 11px;
 }
@@ -63,17 +66,21 @@ header ul li a{
 
 header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 10px;
+    width:90%;
+    border-radius: 5px 0px 0px 5px
 }
 
-header .form .submit{
+header .form .submit{    
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     color: #666;
-    width: 10%;
+    width: 5%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 0px 5px 5px 0px
 }
 
 div.burger-menu{
@@ -193,40 +200,21 @@ main section article:hover i{
 
 footer{
     text-align: center;   
-    background-color: #FFF;     
+    background-color: #FFF;  
+    margin: auto;   
 }
 footer i{
-    background-color: #fff;
-    color: #0044AA;
-    width: 2em; 
+    color: #1259c3;
+    font-size: 2em;    
     margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    transition: all 450ms;
+    padding-top: 10px;   
 }
 
 header nav{
     display: none;
-}
-.control-login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-}
-
-.control-login input{
-    margin: 10px;
-    border: transparent 1px solid;
-    border-radius: 5px;
-    width: 300px;
-    height: 30px;
-
-}
-
-.control-login button{
-    padding: 10px;
-    background-color: lightskyblue;
-    border-radius:5px ; 
-    font-size: 'Roboto', sans-serif;
 }
 
 .register{
@@ -239,6 +227,16 @@ header nav{
 
 
 
+.register label{
+    padding: 5%;
+}
+
+footer div.footer-contenedor{
+    padding: 20px;
+}
+footer div.footer-hijo{
+    padding: 10px;
+}
 
 
 @media (min-width: 361px){
@@ -260,6 +258,8 @@ header nav{
     }
 }
 
+
+
 @media (min-width: 769px){
 
     header div.top-header{
@@ -272,15 +272,10 @@ header nav{
     main section div.products article{
         width: 22%;
     }
-    .login button:hover{
-        background-color: #0022AA;
-        color: white;
-    }
+   
     div.burger-menu{
         display: none;
     }
-
-
     header nav{
         display: flex;
         justify-content: space-between;                
@@ -293,4 +288,10 @@ header nav{
     header nav li{
         padding: 10px;
     }
+
+    .footer-contenedor{
+        display: flex;
+        flex-direction: row;         
+    }
+    
 }
