@@ -13,7 +13,7 @@
         <header>
             <div class="top-header">
                 <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                    <a href="/">  <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre"></a>
                 </div>
                 <div class="form" action="#" method="GET" class="buscador">                    
                     <input type="text" placeholder="Buscar productos, marcas y más">
@@ -41,8 +41,8 @@
         <main class="login">
             <form action="/login" method="POST">
                 <div class="control-login">
-                    <input type="text" name="user" placeholder="Nombre de usuario" minlength="12">
-                    <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                    <input type="text" name="user" required placeholder="Nombre de usuario" minlength="12">
+                    <input type="password" name="pass" required placeholder="Elegí tu contraseña">
                     <button type="submit">Ingresar</button>
                 <div>
             </form>

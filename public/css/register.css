@@ -58,3 +58,17 @@
     background-color: #d02434;
     cursor: pointer;
 }
+
+
+input:required {
+    background-color: lemonchiffon;
+    border-width: 3px;
+  }
+
+
+  
+  input:invalid {
+    border-color: orange;
+    background-color: rgb(230, 203, 207);
+  }
+  

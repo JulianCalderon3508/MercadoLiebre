@@ -27,3 +27,14 @@
     color: white;
 }
 
+
+input:required {
+    background-color: antiquewhite;
+    border-width: 3px;
+  } 
+
+  
+  
+  input:invalid {
+    background-color: #ffdddd;
+  }
